@@ -1,0 +1,13 @@
+#grid-container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 320px; /* Adjust based on the size of your squares */
+  margin: 0 auto; /* Centering the grid */
+}
+
+.grid-square {
+  width: 20px; /* Width of each square */
+  height: 20px; /* Height of each square */
+  border: 1px solid #ccc; /* Border for visibility */
+  box-sizing: border-box; /* Include border in the width/height */
+}
