@@ -1,12 +1,13 @@
 document.addEventListener('DOMContentLoaded', () => {
-  const gridContainer = document.getElementById('grid-container');
-  const gridSize = 16;
+    const container = document.getElementById('etch-a-sketch');
+    const gridSize = 256; // 16x16
 
-  for (let i = 0; i < gridSize * gridSize; i++) {
-      let gridSquare = document.createElement('div');
-      gridSquare.classList.add('grid-square');
-      gridContainer.appendChild(gridSquare);
-  }
+    // Create grid cells
+    for (let i = 0; i < gridSize; i++) {
+        const cell = document.createElement('div');
+        cell.classList.add('pixel');
+        container.appendChild(cell);
+    }
 });
 
 

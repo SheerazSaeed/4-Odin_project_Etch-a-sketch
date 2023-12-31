@@ -1,13 +1,14 @@
-#grid-container {
+#etch-a-sketch {
   display: flex;
   flex-wrap: wrap;
-  width: 320px; /* Adjust based on the size of your squares */
-  margin: 0 auto; /* Centering the grid */
+  width: 400px; /* You can adjust the size */
+  height: 400px; /* Make sure width and height maintain the aspect ratio for a square grid */
+  border: 1px solid black;
 }
 
-.grid-square {
-  width: 20px; /* Width of each square */
-  height: 20px; /* Height of each square */
-  border: 1px solid #ccc; /* Border for visibility */
-  box-sizing: border-box; /* Include border in the width/height */
+.pixel {
+  flex: 0 0 calc(100% / 16); /* For a 16x16 grid */
+  height: calc(100% / 16); /* Same as above */
+  border: 1px solid #eee; /* Optional, for visualizing individual cells */
+  box-sizing: border-box;
 }
