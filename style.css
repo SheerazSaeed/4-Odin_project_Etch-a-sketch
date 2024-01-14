@@ -1,14 +1,18 @@
 #etch-a-sketch {
   display: flex;
   flex-wrap: wrap;
-  width: 400px; /* You can adjust the size */
-  height: 400px; /* Make sure width and height maintain the aspect ratio for a square grid */
+  width: 400px; 
+  height: 400px; 
   border: 1px solid black;
 }
 
 .pixel {
   flex: 0 0 calc(100% / 16); /* For a 16x16 grid */
   height: calc(100% / 16); /* Same as above */
-  border: 1px solid #eee; /* Optional, for visualizing individual cells */
+  border: 1px solid #eee; 
   box-sizing: border-box;
 }
+.pixel:hover {
+  background-color: black;
+}
+
